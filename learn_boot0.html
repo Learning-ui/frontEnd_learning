@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Little Lemon</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">  <!--lg => large screen-->
-                    <div class="alert alert-primary" role="alert">     <!--discussed in notes-->  <!--primary here is the modifer-->
-                        a msg.
-                    </div>
+                <div class="col-12 col-lg-6">   <!--col-12 are for mobile(=>extra small), col-6 are for laptop(=> large)   and can see this in desktop as our two divs are divided into two equal parts-->
+                    <h1>Our Menu</h1>
+                    <h2>falafel</h2>
+                    <p>potato, peas, chilli</p>
+                    <img src="falafel1.png" class="img-fluid">
+                    <h2>salad</h2>
+                    <p>tomato, lettuce, cucumber</p>
+                    <img src="salad1.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-6">   <!--similar to above cna be anything 12 , 6... as it is grid => fluid-->
+                    <h2>Prices</h2>
+                    <table class="table">
+                        <tr>
+                            <td>falafel</td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <td>salad</td>
+                            <td>$5.00</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
