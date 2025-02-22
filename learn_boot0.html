@@ -9,12 +9,35 @@
             <div class="row">
                 <div class="col-12 col-lg-6">   <!--col-12 are for mobile(=>extra small), col-6 are for laptop(=> large)   and can see this in desktop as our two divs are divided into two equal parts-->
                     <h1>Our Menu</h1>
-                    <h2>falafel</h2>
-                    <p>potato, peas, chilli</p>
-                    <img src="falafel1.png" class="img-fluid">
-                    <h2>salad</h2>
-                    <p>tomato, lettuce, cucumber</p>
-                    <img src="salad1.png" class="img-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <img src="falafel1.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h2 class="card-title">falafel</h2>
+                                    <p class="card-text">potato, peas, chilli</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <img src="salad1.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h2 class="card-title">salad</h2>
+                                    <p class="card-text">tomato, lettuce, cucumber</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <img src="cotta1.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h2 class="card-title">panna cotta<span class="badge bg-primary">New</span></h2>
+                                    <p class="card-text">milk, honey, strawberry</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-lg-6">   <!--similar to above cna be anything 12 , 6... as it is grid => fluid-->
                     <h2>Prices</h2>
@@ -27,7 +50,14 @@
                             <td>salad</td>
                             <td>$5.00</td>
                         </tr>
+                        <tr>
+                            <td>panna cotta</td>
+                            <td>$7.00</td>
+                        </tr>
                     </table>
+                    <div class="alert alert-info" role="alert">
+                        try our new dessert!
+                    </div>
                 </div>
             </div>
         </div>
