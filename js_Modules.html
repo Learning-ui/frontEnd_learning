@@ -4,19 +4,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Regular script</title>
+        <title>ES6 modules script</title>
     </head>
     <body>
-        Regular, "old school" JS script.
-        <script type="text/javascript">    //this tells the type of content inside the script.
-            console.log("Hello from script tag");
+        JS scripts as modules.
+        <script type="module">    //this tells the type of content inside the script.
+            import {informalGreeting } from './greeting.js';   //get the module/file 
+            informalGreeting('Jane');
         </script>
-        <script>                            //default type is txt/js so no need to mention
-            console.log("The text/js if the default value.")
+        <script type="module">
+            import {informalGreeting, formalGreeting } from './greeting.js';
+            import greeting from './greeting.js';
+            formalGreeting('John');
+            greeting();
         </script>
     </body>
 </html>
 
 <!--you will see the html output in the browser-->
 <!--you will see the js output in the brower->inspect->console-->
-<!--can write this code in google(browser) and run-->
+<!--can not write this code in google(browser) and run:
+Since I'm running this file locally, access to my script is blocked by a built in browser security feature called cross origin resource sharing and I receive an error message under the console tab. To eliminate this error, I need to run the html file over a server. I can use a local server for that.-->
